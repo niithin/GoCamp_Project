@@ -1,0 +1,2 @@
+# Yelpcamp_Project
+This project is a website for Campgrounds across the country where users can register with an account,view campgrounds added by others,add campgrounds individually,delete campgrounds and can perform specific user operations.Several technologies such as javascript,node.js,express.js,mongoDB and mongoose were used to build the site.Passport.js was used to establish the user authentication and authorization functions.The Website was developed across the Groom IDE platform and deployed through HEROKU which is an open source deployment platform.
