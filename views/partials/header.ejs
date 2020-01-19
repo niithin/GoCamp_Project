@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <title>YelpCamp</title>	
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="/stylesheets/main.css">
+		<link rel="stylesheet" href="/stylesheets/page1.css">
+	</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-info">
+  <a class="navbar-brand" href="/">YelpCamp</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+	<a class="nav-item nav-link active" href="/login">Login<span class="sr-only">(current)</span></a>
+    <a class="nav-item nav-link active" href="/register">Signup</a>
+	<a class="nav-item nav-link active" href="/logout">Logout</a>
+    </div>
+  </div>
+</nav>
+	
+	
+	
+	<div class="container">
+		<%if(error && error.length>0){%>
+		<div class="alert alert-danger" role="alert">
+	<%=error%>	
+	</div>
+		<%}%>
+		<%if(success && success.length>0){%>
+		<div class="alert alert-success" role="alert">
+	<%=success%>	
+	</div>
+		<%}%>
+	</div>
+	
+	
+	
+	
