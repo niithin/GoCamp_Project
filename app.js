@@ -18,7 +18,9 @@ var commentRoutes=require("./routes/comments"),
 
 
 /*seedDB();*/
-mongoose.connect("mongodb+srv://nithindb:Amma*Nana@96@cluster0-c6ial.mongodb.net/test?retryWrites=true&w=majority",{useNewUrlParser: true,useCreateIndex:true,useUnifiedTopology:true});
+mongoose.connect(process.env.DATABASEURL,{useNewUrlParser: true,useCreateIndex:true,useUnifiedTopology:true});
+
+
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine","ejs");
 app.use(express.static(__dirname + "/public"));
